@@ -2,7 +2,7 @@ name: Test PHP syntax
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   syntax-check:
