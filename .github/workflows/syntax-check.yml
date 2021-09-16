@@ -8,6 +8,8 @@ jobs:
   syntax-check:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
       - name: PHP Syntax Checker (Lint)
         uses: StephaneBour/actions-php-lint@7.3
         with:
