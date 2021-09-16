@@ -1,0 +1,14 @@
+name: Test PHP syntax
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PHP Syntax Checker (Lint)
+        uses: StephaneBour/actions-php-lint@7.3
+        with:
+          dir: './'
